@@ -52,13 +52,6 @@ RSpec.describe GroupsController, :type => :controller do
     end
   end
 
-  describe "GET new" do
-    it "assigns a new group as @group" do
-      get :new, {}, valid_session
-      expect(assigns(:group)).to be_a_new(Group)
-    end
-  end
-
   describe "GET edit" do
     it "assigns the requested group as @group" do
       group = Group.create! valid_attributes
